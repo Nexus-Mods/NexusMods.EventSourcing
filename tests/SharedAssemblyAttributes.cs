@@ -1,5 +1,2 @@
 // ReSharper disable once RedundantNameQualifier
-
-using System.Diagnostics.CodeAnalysis;
-
-[assembly: ExcludeFromCodeCoverage]
+[assembly: global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
