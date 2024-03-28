@@ -1,5 +1,5 @@
 <Project>
-    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))"/>
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
 
     <PropertyGroup>
         <IsPackable>false</IsPackable>
@@ -7,18 +7,18 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Moq" Version="4.*"/>
+        <PackageReference Include="Moq" Version="4.*" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="AutoFixture" Version="4.*"/>
-        <PackageReference Include="AutoFixture.AutoMoq" Version="4.*"/>
-        <PackageReference Include="AutoFixture.Xunit2" Version="4.*"/>
+        <PackageReference Include="AutoFixture" Version="4.*" />
+        <PackageReference Include="AutoFixture.AutoMoq" Version="4.*" />
+        <PackageReference Include="AutoFixture.Xunit2" Version="4.*" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentAssertions" Version="6.*"/>
-        <PackageReference Include="FluentAssertions.OneOf" Version="0.0.5"/>
+        <PackageReference Include="FluentAssertions" Version="6.*" />
+        <PackageReference Include="FluentAssertions.OneOf" Version="0.0.5" />
         <PackageReference Include="FluentAssertions.Analyzers" Version="0.18.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -26,19 +26,19 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="xunit" Version="2.4.*"/>
+        <PackageReference Include="xunit" Version="2.4.*" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.*">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Xunit.SkippableFact" Version="1.4.*"/>
-        <PackageReference Include="Xunit.DependencyInjection" Version="8.*"/>
-        <PackageReference Include="Xunit.DependencyInjection.Logging" Version="8.*"/>
-        <PackageReference Include="Xunit.DependencyInjection.SkippableFact" Version="8.*"/>
+        <PackageReference Include="Xunit.SkippableFact" Version="1.4.*" />
+        <PackageReference Include="Xunit.DependencyInjection" Version="8.*" />
+        <PackageReference Include="Xunit.DependencyInjection.Logging" Version="8.*" />
+        <PackageReference Include="Xunit.DependencyInjection.SkippableFact" Version="8.*" />
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.*"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.*" />
         <PackageReference Include="coverlet.collector" Version="6.*">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
